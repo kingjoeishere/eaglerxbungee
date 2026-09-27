@@ -1,26 +1,20 @@
-import { Config } from "./types.js";
-
-export const config: Config = {
-    name: "BasedProxy",
+export const config = {
+    name: "EaglerX Proxy",
     bindHost: "0.0.0.0",
-    bindPort: 80, // 443 if using TLS
+    bindPort: 8080,
     maxPlayers: 20,
     motd: {
-        iconURL: null,
-        l1: "hi",
-        l2: "lol"
+        l1: "Eaglercraft Aternos Bridge",
+        l2: "Online 24/7",
+        iconURL: null
     },
     server: {
-        host: "locahost",
-        port: 25565
+        host: "typicalmans.aternos.me",
+        port: 14069
     },
-    security: { // provide path to key & cert if you want to enable encryption/secure websockets
+    security: {
         enabled: false,
         key: null,
         cert: null
     }
-}
-
-export const BRANDING: Readonly<string> = Object.freeze("EaglerXProxy")
-export const VERSION: Readonly<string> = "1.0.0"
-export const NETWORK_VERSION: Readonly<string> = Object.freeze(BRANDING + "/" + VERSION)
+};
